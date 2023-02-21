@@ -38,6 +38,10 @@ menu .nav-item {
     padding: 0 0.3em;
 }
 
+footer a {
+    float: right;
+}
+
 #count {
     color: rgb(246, 239, 158);
 }
@@ -133,4 +137,22 @@ menu .nav-item {
     border-radius: 10px;
     border: solid thin rgb(117, 0, 0);
     background-color: #300;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-height: 600px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    main {
+        flex: 1 100vh;
+    }
 }
